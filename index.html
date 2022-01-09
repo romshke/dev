@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мобильное приложение с применением технологии AR</title>
+
+  <!-- montserrat fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  </style>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- owlcarousel plugin -->
+  <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+  <script src="assets/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- scrollrevealjs -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <script src="assets/js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <img class="logo" src="assets/img/AR-icon.svg">
+      <ul class="menu" id="menu">
+        <li class="item"><a class="scroll" href="#about">О проекте</a></li>
+          <li class="item"><a class="scroll" href="#ar">AR</a></li>
+          <li class="item"><a class="scroll" href="#sdk">Средства разработки</a></li>
+          <li class="item"><a class="scroll" href="#projecttimeline">График проекта</a></li>
+      </ul>
+      <button data-collapse data-target="#menu" class="toggle">
+        <span class="icon"></span>
+      </button>
+    </header>
+    <div class="content">
+      <section id="about" class="section about">
+        <div class="section-title top-reveal">
+          <h1>О проекте</h1>
+        </div>
+        <div class="section-content">
+          <div class="text left-reveal">
+            <p>
+              "AR APP" - программный продукт на базе операционной системы Android c элементами дополненной реальности,
+              который позволит ознакомиться с музейными экспонатами в виде трехмерных объектов не выходя из дома. Для
+              работы приложения поребуется лишь мобильное устройство с поддержкой AR.
+            </p>
+          </div>
+          <div class="image right-reveal">
+            <img src="assets/img/about-section-image.png">
+          </div>
+        </div>
+      </section>
+      <section id="ar" class="section ar">
+        <div class="section-title bottom-reveal">
+          <h1>AR</h1>
+        </div>
+        <div class="section-content">
+          <div class="subsection">
+            <div class="image right-reveal">
+              <img src="assets/img/ar-section-image.png">
+            </div>
+            <div class="text right-reveal">
+              <p>
+                Дополненная реальность (Augmented Reality, AR) - это технология, позволяющая интегрировать различные
+                объекты
+                виртуального мира, такие как текст, компьютерная графика, видео, аудио и т.д. в реальное пространство.
+              </p>
+            </div>
+          </div>
+          <div class="subsection">
+            <div class="subtitle bottom-reveal">
+              <h2>Типы дополненной реальности</h2>
+            </div>
+            <div class="owl-carousel bottom-reveal">
+              <div class="carousel-item">
+                <img class="carousel-image" src="assets/img/marker-based.jpg">
+                <div class="image-overlay">
+                  <h3 class="overlay-title">
+                    Дополненная реальность на основе маркеров
+                  </h3>
+                  <p class="overlay-text">
+                    Некоторые называют этот тип распознаванием изображений, так как для сканирования используется камера и
+                    специальные визуальные объекты (маркеры). В качестве маркеров может быть что угодно: от напечатанного
+                    QR-кода до специальных знаков.
+                    Четкие, простые объекты (например, QR-код) легко узнаваемы, не требуют много вычислительной мощности
+                    для
+                    их определения. Система AR вычисляет положение и ориентацию маркера для размещения определенного типа
+                    содержимого или информации.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="carousel-image" src="assets/img/markerless.jpeg">
+                <div class="image-overlay">
+                  <h3 class="overlay-title">
+                    Безмаркерная дополненная реальность
+                  </h3>
+                  <p class="overlay-text">
+                    Устройства безмаркерной AR используют встроенные GPS, цифровой компас, гироскоп, акселерометр для
+                    того,
+                    чтобы обеспечить данные на основе местоположения.
+                    Существенным фактором широкого применения этой технологии является доступность смартфонов и функции
+                    определения местоположения, которые они обеспечивают. При наличии смартфонов этот тип AR обычно
+                    показывает карты, направления, информацию о близлежащих предприятиях, всплывающие окна бизнес-рекламы.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="carousel-image" src="assets/img/projection-based.jpg">
+                <div class="image-overlay">
+                  <h3 class="overlay-title">
+                    Дополненная реальность на основе проекции
+                  </h3>
+                  <p class="overlay-text">
+                    Такой тип технологии работает на основе проецирования искусственного света на физические поверхности
+                    для
+                    создания реалистичных объектов. Другими словами, проекционные AR-системы проецируют виртуальные образы
+                    на физические модели, позволяя пользователям взаимодействовать с создаваемыми объектами на основе их
+                    изменений. Взаимодействие происходит с помощью различий между ожидаемой проекцией и измененной.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="carousel-image" src="assets/img/outlining.jpg">
+                <div class="image-overlay">
+                  <h3 class="overlay-title">
+                    Дополненная реальность на основе наложения
+                  </h3>
+                  <p class="overlay-text">
+                    Технология, основанная на наложении, характеризуется частичной или полной заменой исходного вида
+                    физического объекта его новым измененным видом. Распознавание объектов в работе приложения играет
+                    ключевую роль: замена реального изображения добавленным невозможна, если приложение не может
+                    определить
+                    объект и его расположение.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="sdk" class="section sdk">
+        <div class="section-title bottom-reveal">
+          <h1 class="title">Средства разработки</h1>
+        </div>
+        <div class="section-content">
+          <div class="item">
+            <img class="image bottom-reveal" src="assets/img/unity.svg">
+            <p class="text bottom-reveal">
+              Unity — межплатформенная среда разработки компьютерных игр, разработанная американской компанией
+              Unity
+              Technologies. Unity позволяет создавать приложения, работающие на более чем 25 различных платформах,
+              включающих персональные компьютеры, игровые консоли, мобильные устройства, интернет-приложения и
+              другие.
+            </p>
+          </div>
+          <div class="item">
+            <img class="image bottom-reveal" src="assets/img/vufloria.png">
+            <p class="text bottom-reveal">
+              Vuforia — это платформа дополненной реальности и инструментарий разработчика программного
+              обеспечения
+              дополненной реальности для мобильных устройств, разработанные компанией Qualcomm. Vuforia использует
+              технологии компьютерного зрения, а также отслеживания плоских изображений и простых объёмных
+              реальных
+              объектов в реальном времени.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="projecttimeline" class="section projecttimeline">
+        <div class="section-title bottom-reveal">
+          <h1 class="title">График проекта</h1>
+        </div>
+        <div class="section-content">
+          <div class="timeline">
+            <div class="item">
+              <div class="dot"></div>
+              <div class="card">
+                <h4 class="card-title">Анализ предметной области</h4>
+                <h5 class="card-date">1.11.2021 – 10.11.2021</h5>
+                <ul class="card-text">
+                  <li>определить цели;</li>
+                  <li>определить набор задач;</li>
+                  <li>определить набор сущностей, с которыми придется иметь дело при решении этих задач.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item">
+              <div class="dot"></div>
+              <div class="card">
+                <h4 class="card-title">Анализ требований к информационной системе</h4>
+                <h5 class="card-date">11.11.2021 – 20.11.2021</h5>
+                <ul class="card-text">
+                  <li>определить требования к структуре системы;</li>
+                  <li>определить требования к функционированию системы;</li>
+                  <li>определить требования к защите и сохранности информации.</li>     
+                </ul>
+              </div>
+            </div>
+            <div class="item">
+              <div class="dot"></div>
+              <div class="card">
+                <h4 class="card-title">Анализ и выбор средств разработки</h4>
+                <h5 class="card-date">21.11.2021 – 30.11.2021</h5>
+                <p class="card-text">Основные критерии при выборе:</p>
+                <ul class="card-text">
+                  <li>быстродействие;</li>
+                  <li>простота;</li>
+                  <li>удобство;</li>
+                  <li>функциональность;</li>
+                  <li>совместимость.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item">
+              <div class="dot"></div>
+              <div class="card">
+                <h4 class="card-title">Проектирование</h4>
+                <h5 class="card-date">1.02.2022 – 15.02.2022</h5>
+                <p class="card-text">Проектирование ПО включает следующие основные виды деятельности:</p>
+                <ul class="card-text">
+                  <li>выбор метода и стратегии решения;</li>
+                  <li>выбор представления внутренних данных;</li>
+                  <li>разработка основного алгоритма;</li>
+                  <li>документирование ПО;</li>
+                  <li>тестирование и подбор тестов;</li>
+                  <li>выбор представления входных данных.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="item">
+              <div class="dot"></div>
+              <div class="card">
+                <h4 class="card-title">Реализация</h4>
+                <h5 class="card-date">16.02.2022 – 15.03.2022</h5>
+                <p class="card-text">
+                  На протяжении этого этапа необходимо: произвести анализ программно-аппаратной базы пользователя и реализовать результаты проектирования на языке программирования. Для этих целей необходимо произвести анализ минимальной конфигурации программно-аппаратной платформы пользователя.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="dot"></div>
+              <div class="card">
+                <h4 class="card-title">Тестирование</h4>
+                <h5 class="card-date">16.03.2022 – 1.04.2022</h5>
+                <p class="card-text">Тестирование включает следующие этапы:</p>
+                <ul class="card-text">
+                  <li>планирование работ;</li>
+                  <li>проектирование тестов путем ручной разработки или автоматической генерации;</li>
+                  <li>выполнение тестирования с получением результатов;</li>
+                  <li>анализ полученных результатов выполнения с целью оценки качества ПО.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
